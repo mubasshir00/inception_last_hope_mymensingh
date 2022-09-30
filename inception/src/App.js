@@ -2,7 +2,7 @@ import logo from './logo.svg'
 import './App.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
-import Home from './pages/Home'
+import Swiperimage from './images_com/Swiperimage'
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
         <SwiperSlide>Slide 4</SwiperSlide>
         ...
       </Swiper>
+      <Swiperimage />
     </div>
   )
 }
