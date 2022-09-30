@@ -1,5 +1,13 @@
-import Gallery from '../components/Gallery'
+import React from 'react'
+import Nav from './Nav'
 
-export default function Home() {
-  return <main>Home Page</main>
+const Home = () => {
+  return (
+    <div>
+      <Nav/>
+      <Home/>
+    </div>
+  )
 }
+
+export default Home

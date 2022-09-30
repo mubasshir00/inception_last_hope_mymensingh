@@ -1,0 +1,15 @@
+.howtocontainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+}
+.howtocontainer div{
+background-color: hsl(208, 43%, 83%);
+margin: 20px;
+
+}
+.howtocontainer img{
+    width: 300px;
+    height: 200px;
+}
