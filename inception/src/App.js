@@ -67,7 +67,7 @@ function App() {
             <h1
               className="text-[5rem] font-bold text-black mb-12"
               style={{
-                fontFamily: "Raleway",
+                fontFamily: 'Raleway',
               }}
             >
               Moonquake Locations
@@ -85,27 +85,39 @@ function App() {
             <h1
               className="text-[5rem] font-bold text-black"
               style={{
-                fontFamily: "Raleway",
+                fontFamily: 'Raleway',
               }}
             >
               Visualize in 3D
             </h1>
 
-            <div>
-              <Explore />
-            </div>
+            <Explore />
           </div>
         </section>
+
+        <section
+          id="howtouse"
+          class="section container mx-auto px-4 flex flex-col gap-[50px]"
+        >
+          <h1
+            className="text-[5rem] font-bold text-black text-center"
+            style={{
+              fontFamily: 'Raleway',
+            }}
+          >
+            For offline usage
+          </h1>
+          <div class="section__content" data-content>
+            <Howtouse />
+          </div>
+        </section>
+
         <section id="about" class="section container mx-auto px-4">
           <div class="section__content" data-content>
             <About />
           </div>
         </section>
-        <section id="howtouse" class="section container mx-auto px-4">
-          <div class="section__content" data-content>
-           <Howtouse/>
-          </div>
-        </section>
+
         <section id="teammember" class="section container mx-auto px-4">
           <div class="section__content" data-content>
             <Teammember />
@@ -113,7 +125,7 @@ function App() {
         </section>
       </main>
     </div>
-  );
+  )
 }
 
 export default App

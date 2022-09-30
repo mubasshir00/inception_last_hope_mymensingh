@@ -124,7 +124,7 @@ const images = [
 ]
 
 const Swiperimage = () => {
-  const swiper = useSwiper();
+  const swiper = useSwiper()
 
   return (
     <div>
@@ -132,12 +132,12 @@ const Swiperimage = () => {
         autoplay={{
           delay: 2000,
           disableOnInteraction: false,
-          waitForTransition:true,
-          transition:500
+          waitForTransition: true,
+          transition: 500,
         }}
         centeredSlidesBounds
         loopFillGroupWithBlank={false}
-        effect={"coverflow"}
+        effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={3}
@@ -163,18 +163,18 @@ const Swiperimage = () => {
                 <h1
                   className="p-8 text-black text-[2rem] font-bold"
                   style={{
-                    fontFamily: "Raleway",
+                    fontFamily: 'Raleway',
                   }}
                 >
                   {i.year}
                 </h1>
               </div>
             </SwiperSlide>
-          );
+          )
         })}
       </Swiper>
     </div>
-  );
+  )
 }
 
 export default Swiperimage
