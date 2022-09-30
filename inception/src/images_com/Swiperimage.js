@@ -1,6 +1,19 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+
+const images1971 = [
+  {
+    img1: "/moonquake/1.png",
+  },
+  {
+    img2: "/moonquake/2.png",
+  },
+  {
+    img3: "/moonquake/3.png",
+  },
+];
+
 const Swiperimage = () => {
   return (
     <div>
@@ -21,8 +34,7 @@ const Swiperimage = () => {
           <SwiperSlide>
             <img src="/moonquake/3.png" />
           </SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          ...
+          
         </Swiper>
       </div>
     </div>
