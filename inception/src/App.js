@@ -46,15 +46,15 @@ function App() {
     <main>
       <Hero />
 
-      <section class="section">
-        <div class="section__content" data-content>
+      <section className="section">
+        <div className="section__content" data-content>
           <h2>Content inside</h2>
           <p>blah blah blah</p>
         </div>
       </section>
 
-      <section class="section">
-        <div class="section__content" data-content>
+      <section className="section">
+        <div className="section__content" data-content>
           <h2>Content inside</h2>
           <p>blah blah blah</p>
         </div>

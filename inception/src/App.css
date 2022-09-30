@@ -31,7 +31,7 @@
 
 .is-visible .section__content > * {
   opacity: 1;
-  transform: translate3d(0, 1rem, 0);
+  transform: translate3d(0, 0, 0);
 }
 .is-visible .section__img {
   opacity: 0.75;
