@@ -1,0 +1,167 @@
+
+
+.teammber header {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.teammber header .title,
+.teammber header .content {
+    flex: 1;
+}
+
+.teammber header .title h3 {
+    font-size: 36px;
+}
+
+.teammber header .content h5 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.teammber header .content p {
+    font-size: 14px;
+}
+
+.teammber main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 70px;
+    padding: 50px 0px;
+}
+
+.teammber main .profile {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.teammber main .profile figure {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.teammber main .profile figure img {
+    width: 80%;
+}
+
+.teammber main .profile figure figcaption {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 12px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.teammber main .profile figure::after {
+    content: attr(data-value);
+    width: 100%;
+    transform-origin: 0 0;
+    transform: rotate(90deg);
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 12px;
+    right: -92%;
+}
+
+.teammber main .profile:nth-child(2) {
+    margin-top: 70px;
+}
+
+.teammber main .profile:nth-child(4) {
+    margin-top: -70px;
+}
+
+.teammber main .profile:nth-child(6) {
+    margin-top: -70px;
+}
+
+.teammber footer {
+    height: 5%;
+    color: #bdbdbd;
+    display: grid;
+    place-items: center;
+    font-size: 12px;
+}
+
+.teammber footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (max-width: 1440px) {
+    .teammber {
+        width: 70%;
+    }
+
+    .teammber main {
+        column-gap: 50px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .teammber {
+        width: 80%;
+    }
+
+    .teammber main {
+        column-gap: 35px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .teammber {
+        width: 90%;
+    }
+
+    .teammber main {
+        column-gap: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .teammber {
+        width: 90%;
+        height: auto;
+        margin: 50px auto 10px;
+    }
+
+    .teammber header {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 20px;
+    }
+
+    .teammber header .title {
+        align-self: flex-start;
+    }
+
+    .teammber header .title h3 {
+        font-size: 30px;
+    }
+
+    .teammber main {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0px;
+        row-gap: 0px;
+    }
+
+    .teammber main .profile:nth-child(2),
+    .teammber main .profile:nth-child(4),
+    .teammber main .profile:nth-child(6) {
+        margin-top: 50px;
+    }
+
+    .teammber main .profile:nth-child(3),
+    .teammber main .profile:nth-child(5) {
+        margin-top: 0px;
+    }
+}

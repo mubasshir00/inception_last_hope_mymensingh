@@ -94,7 +94,9 @@ function App() {
           </div>
         </section>
         <section id="about" class="section container mx-auto px-4">
-          <div class="section__content" data-content></div>
+          <div class="section__content" data-content>
+            <About/>
+          </div>
         </section>
         <section id="teammember" class="section container mx-auto px-4">
           <div class="section__content" data-content>
