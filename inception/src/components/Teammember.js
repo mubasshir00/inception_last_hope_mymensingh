@@ -17,38 +17,38 @@ const Teammember = () => {
       </header>
       <main>
         <div className="profile">
-          <figure data-value="product owner">
-            <img src="https://rvs-team-page.onrender.com/photo1.png" alt />
+          <figure data-value="Team Lead">
+            <img src="/moonquake/kazi.jpg" alt />
             <figcaption>Kazi Hasib</figcaption>
           </figure>
         </div>
         <div className="profile">
-          <figure data-value="art director">
-            <img src="https://rvs-team-page.onrender.com/photo2.png" alt />
+          <figure data-value="VR Developer">
+            <img src="/moonquake/syed.png" alt />
             <figcaption>Syed Rubayyat Akbar</figcaption>
           </figure>
         </div>
         <div className="profile">
-          <figure data-value="tech lead">
-            <img src="https://rvs-team-page.onrender.com/photo3.png" alt />
+          <figure data-value="Business Analyst">
+            <img src="/moonquake/turjo.jpg" alt />
             <figcaption>Manoshi Das Turjo</figcaption>
           </figure>
         </div>
         <div className="profile">
-          <figure data-value="ux designer">
-            <img src="https://rvs-team-page.onrender.com/photo4.png" alt />
+          <figure data-value="Front End Developer">
+            <img src="/moonquake/wasiul.jpg" alt />
             <figcaption>Wasiul Islam</figcaption>
           </figure>
         </div>
         <div className="profile">
-          <figure data-value="developer">
-            <img src="https://rvs-team-page.onrender.com/photo5.png" alt />
+          <figure data-value="Back End Developer">
+            <img src="/moonquake/Mubasshir.jpg" alt />
             <figcaption>Mubasshir Ahmed</figcaption>
           </figure>
         </div>
         <div className="profile">
-          <figure data-value="developer">
-            <img src="https://rvs-team-page.onrender.com/photo6.png" alt />
+          <figure data-value="UI/UX Designer">
+            <img src="/moonquake/shanto_n.png" alt />
             <figcaption>S.M. Sajid Hasan Shanta</figcaption>
           </figure>
         </div>
