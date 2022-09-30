@@ -8,6 +8,8 @@ import Hero from './components/Hero'
 import Explore from './explore/Explore'
 import { Navigation } from './components/Navigation'
 import Teammember from './components/Teammember'
+import About from './components/About'
+import Herocontentmoon from './components/Herocontentmoon'
 
 function App() {
   // useEffect(() => {
@@ -49,18 +51,19 @@ function App() {
     <div>
       <Navigation />
       <main
-        className="space-y-10 bg-gray-100"
+        // className="space-y-10 bg-gray-100"
         // style={{
         //   background: 'url("background.jpg")',
         // }}
       >
-        <Hero />
+        {/* <Hero /> */}
+        <Herocontentmoon/>
 
-        <section id="gallery" className="section container mx-auto px-4">
+        <div id="gallery" className="section container mx-auto px-4">
           <div class="section__content" data-content>
             <Swiperimage />
           </div>
-        </section>
+        </div>
 
         <section id="threedview" class="section container mx-auto px-4">
           <div class="section__content" data-content>
@@ -69,7 +72,7 @@ function App() {
         </section>
         <section id="about" class="section container mx-auto px-4">
           <div class="section__content" data-content>
-            
+            <About/>
           </div>
         </section>
         <section id="teammember" class="section container mx-auto px-4">
