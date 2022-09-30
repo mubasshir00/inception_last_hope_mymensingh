@@ -1,7 +1,12 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { EffectCoverflow, Pagination } from 'swiper'
+
 import 'swiper/css'
 import { useState } from 'react'
+import 'swiper/css'
+import 'swiper/css/effect-coverflow'
+import 'swiper/css/pagination'
 
 const images = [
   {
@@ -122,14 +127,21 @@ const Swiperimage = () => {
   return (
     <div>
       <Swiper
-        spaceBetween={20}
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
         slidesPerView={3}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={swiper => console.log(swiper)}
-        pagination
-        navigation
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        pagination={true}
+        modules={[EffectCoverflow, Pagination]}
+        className="mySwiper"
         autoHeight
-        autoplay
       >
         {images.map(i => {
           // if (i.year === year) {
