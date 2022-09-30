@@ -6,6 +6,7 @@ import './App.css'
 import { useEffect } from 'react'
 import Hero from './components/Hero'
 import Explore from './explore/Explore'
+import { Navigation } from './components/Navigation'
 
 function App() {
   // useEffect(() => {
@@ -44,30 +45,33 @@ function App() {
   // }, [])
 
   return (
-    <main
-      className="space-y-10"
-      style={{
-        background: 'url("background.jpg")',
-      }}
-    >
-      <Hero />
+    <div>
+      <Navigation />
+      <main
+        className="space-y-10"
+        style={{
+          background: 'url("background.jpg")',
+        }}
+      >
+        <Hero />
 
-      <section className="section container mx-auto px-4">
-        <div class="section__content" data-content>
-          <Swiperimage />
-        </div>
-      </section>
+        <section id="gallery" className="section container mx-auto px-4">
+          <div class="section__content" data-content>
+            <Swiperimage />
+          </div>
+        </section>
 
-      <section class="section container mx-auto px-4">
-        <div class="section__content" data-content>
-          <Explore />
-        </div>
-      </section>
-    </main>
+        <section id="threedview" class="section container mx-auto px-4">
+          <div class="section__content" data-content>
+            <Explore />
+          </div>
+        </section>
+      </main>
+    </div>
 
     // <main className="container-lg px-4 max-auto">
     // </main>
-  )
+  );
 }
 
 export default App
