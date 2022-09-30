@@ -36,11 +36,24 @@ const About = () => {
               <div className="carousel-inner">
                 <div className="carousel-item row">
                   <div className="col-lg-6 col-md-12 pl-0">
-                    <div className="history-img">
-                      <img
+                    <div className="history-img" style={{
+                        display:'flex',
+                        alignItems:'center',
+                        justifyContent:'center',
+                        paddingTop:'40px'
+                    }}>
+                      {/* <img
                         className="img-fluid"
                         src="https://i.ibb.co/CKNmhMX/blog1.jpg"
                         alt
+                      /> */}
+                      <video
+                        className="img-fluid"
+                        src="/vr.mp4"
+                        width="600"
+                        height="200"
+                        controls="controls"
+                        autoplay="true"
                       />
                     </div>
                   </div>
