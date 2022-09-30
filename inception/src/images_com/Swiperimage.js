@@ -129,6 +129,7 @@ const Swiperimage = () => {
         pagination
         navigation
         autoHeight
+        autoplay
       >
         {images.map(i => {
           // if (i.year === year) {
