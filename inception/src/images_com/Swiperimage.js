@@ -1,7 +1,12 @@
 import React from 'react'
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { EffectCoverflow, Pagination } from 'swiper'
+
 import 'swiper/css'
 import { useState } from 'react'
+import 'swiper/css'
+import 'swiper/css/effect-coverflow'
+import 'swiper/css/pagination'
 
 const images = [
   {
@@ -124,21 +129,37 @@ const Swiperimage = () => {
   return (
     <div>
       <Swiper
-        spaceBetween={10}
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
         slidesPerView={3}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={swiper => console.log(swiper)}
-        pagination
-        navigation
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        pagination={true}
+        modules={[EffectCoverflow, Pagination]}
+        className="mySwiper"
+        autoHeight
       >
         {images.map(i => {
           // if (i.year === year) {
           // }
           return (
             <SwiperSlide>
-              <div className="flex flex-col gap-2 items-center justify-center bg-gray-200 rounded-b-xl">
-                <img src={`${i.img}`} className="" />
-                <h1 className="pb-2">{i.year}</h1>
+              <div className="flex flex-col gap-2 items-center justify-center bg-gray-300 rounded-b-xl drop-shadow-md">
+                <img src={`${i.img}`} height={300} />
+                <h1
+                  className="p-8 text-black text-[2rem] font-bold"
+                  style={{
+                    fontFamily: 'Raleway',
+                  }}
+                >
+                  {i.year}
+                </h1>
               </div>
             </SwiperSlide>
           )
