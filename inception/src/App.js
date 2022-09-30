@@ -11,6 +11,7 @@ import Teammember from './components/Teammember'
 import ParallaxHero from './components/ParallaxHero'
 import About from './components/About'
 import Herocontentmoon from './components/Herocontentmoon'
+import Howtouse from './components/Howtouse'
 
 function App() {
   // useEffect(() => {
@@ -66,7 +67,7 @@ function App() {
             <h1
               className="text-[5rem] font-bold text-black mb-12"
               style={{
-                fontFamily: 'Raleway',
+                fontFamily: "Raleway",
               }}
             >
               Moonquake Locations
@@ -84,7 +85,7 @@ function App() {
             <h1
               className="text-[5rem] font-bold text-black"
               style={{
-                fontFamily: 'Raleway',
+                fontFamily: "Raleway",
               }}
             >
               Visualize in 3D
@@ -100,6 +101,11 @@ function App() {
             <About />
           </div>
         </section>
+        <section id="howtouse" class="section container mx-auto px-4">
+          <div class="section__content" data-content>
+           <Howtouse/>
+          </div>
+        </section>
         <section id="teammember" class="section container mx-auto px-4">
           <div class="section__content" data-content>
             <Teammember />
@@ -107,7 +113,7 @@ function App() {
         </section>
       </main>
     </div>
-  )
+  );
 }
 
 export default App
