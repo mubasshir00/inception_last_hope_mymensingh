@@ -1,4 +1,4 @@
-@media (min-height: 30em) {
+/* @media (min-height: 30em) {
   main {
     scroll-snap-type: y mandatory;
     height: 100vh;
@@ -35,7 +35,7 @@
 }
 .is-visible .section__img {
   opacity: 0.75;
-}
+} */
 
 .bg {
   background-image: url('../public/moon-landing.jpg');

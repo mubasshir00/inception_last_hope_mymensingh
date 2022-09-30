@@ -5,42 +5,43 @@ import 'swiper/css'
 import './App.css'
 import { useEffect } from 'react'
 import Hero from './components/Hero'
+import Explore from './explore/Explore'
 
 function App() {
-  useEffect(() => {
-    const sections = [...document.querySelectorAll('section')]
+  // useEffect(() => {
+  //   const sections = [...document.querySelectorAll('section')]
 
-    let options = {
-      rootMargin: '0px',
-      threshold: 0.75,
-    }
+  //   let options = {
+  //     rootMargin: '0px',
+  //     threshold: 0.75,
+  //   }
 
-    const callback = (entries, observer) => {
-      entries.forEach(entry => {
-        const { target } = entry
+  //   const callback = (entries, observer) => {
+  //     entries.forEach(entry => {
+  //       const { target } = entry
 
-        if (entry.intersectionRatio >= 0.75) {
-          target.classList.add('is-visible')
-        } else {
-          target.classList.remove('is-visible')
-        }
-      })
-    }
+  //       if (entry.intersectionRatio >= 0.75) {
+  //         target.classList.add('is-visible')
+  //       } else {
+  //         target.classList.remove('is-visible')
+  //       }
+  //     })
+  //   }
 
-    const observer = new IntersectionObserver(callback, options)
+  //   const observer = new IntersectionObserver(callback, options)
 
-    sections.forEach((section, index) => {
-      const sectionChildren = [
-        ...section.querySelector('[data-content]').children,
-      ]
+  //   sections.forEach((section, index) => {
+  //     const sectionChildren = [
+  //       ...section.querySelector('[data-content]').children,
+  //     ]
 
-      sectionChildren.forEach((el, index) => {
-        el.style.setProperty('--delay', `${index * 250}ms`)
-      })
+  //     sectionChildren.forEach((el, index) => {
+  //       el.style.setProperty('--delay', `${index * 250}ms`)
+  //     })
 
-      observer.observe(section)
-    })
-  }, [])
+  //     observer.observe(section)
+  //   })
+  // }, [])
 
   return (
     <main>
@@ -53,10 +54,9 @@ function App() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="section__content" data-content>
-          <h2>Content inside</h2>
-          <p>blah blah blah</p>
+      <section class="section">
+        <div class="section__content" data-content>
+          <Explore />
         </div>
       </section>
     </main>

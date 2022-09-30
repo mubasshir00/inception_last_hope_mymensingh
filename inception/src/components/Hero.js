@@ -10,7 +10,7 @@ export default function Hero() {
           }}
         ></div>
 
-        <h1 className="absolute text-white">Explore Moonquake</h1>
+        {/* <h1 className="absolute text-white">Explore Moonquake</h1> */}
       </div>
     </section>
   )
