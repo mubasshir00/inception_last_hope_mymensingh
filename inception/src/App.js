@@ -5,6 +5,7 @@ import 'swiper/css'
 import './App.css'
 import { useEffect } from 'react'
 import Hero from './components/Hero'
+import Explore from './explore/Explore'
 
 function App() {
   useEffect(() => {
@@ -55,8 +56,7 @@ function App() {
 
       <section class="section">
         <div class="section__content" data-content>
-          <h2>Content inside</h2>
-          <p>blah blah blah</p>
+          <Explore/>
         </div>
       </section>
     </main>
