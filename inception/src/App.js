@@ -8,6 +8,7 @@ import Hero from './components/Hero'
 import Explore from './explore/Explore'
 import { Navigation } from './components/Navigation'
 import Teammember from './components/Teammember'
+import ParallaxHero from './components/ParallaxHero'
 
 function App() {
   // useEffect(() => {
@@ -54,7 +55,8 @@ function App() {
         //   background: 'url("background.jpg")',
         // }}
       >
-        <Hero />
+        {/* <Hero /> */}
+        <ParallaxHero />
 
         <section id="gallery" className="section container mx-auto px-4">
           <div class="section__content text-center" data-content>
