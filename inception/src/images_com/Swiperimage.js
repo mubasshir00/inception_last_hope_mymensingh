@@ -4,13 +4,13 @@ import "swiper/css";
 
 const images1971 = [
   {
-    img1: "/moonquake/1.png",
+    img: "/moonquake/1.png",
   },
   {
-    img2: "/moonquake/2.png",
+    img: "/moonquake/2.png",
   },
   {
-    img3: "/moonquake/3.png",
+    img: "/moonquake/3.png",
   },
 ];
 
@@ -25,16 +25,13 @@ const Swiperimage = () => {
           onSlideChange={() => console.log("slide change")}
           onSwiper={swiper => console.log(swiper)}
         >
-          <SwiperSlide>
-            <img src="/moonquake/1.png" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="/moonquake/2.png" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="/moonquake/3.png" />
-          </SwiperSlide>
           
+          {images1971.map((i)=>{
+            console.log(i.img);
+            return <SwiperSlide>
+              <img src={`${i.img}`}/>
+            </SwiperSlide>;
+          })}
         </Swiper>
       </div>
     </div>
