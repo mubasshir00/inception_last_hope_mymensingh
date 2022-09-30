@@ -49,7 +49,7 @@ function App() {
     <div>
       <Navigation />
       <main
-        className="space-y-10"
+        className="space-y-10 bg-gray-100"
         // style={{
         //   background: 'url("background.jpg")',
         // }}
@@ -82,7 +82,7 @@ function App() {
 
     // <main className="container-lg px-4 max-auto">
     // </main>
-  );
+  )
 }
 
 export default App
