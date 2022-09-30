@@ -9,6 +9,8 @@ import Explore from './explore/Explore'
 import { Navigation } from './components/Navigation'
 import Teammember from './components/Teammember'
 import ParallaxHero from './components/ParallaxHero'
+import About from './components/About'
+import Herocontentmoon from './components/Herocontentmoon'
 
 function App() {
   // useEffect(() => {
@@ -57,6 +59,7 @@ function App() {
       >
         {/* <Hero /> */}
         <ParallaxHero />
+        {/* <Herocontentmoon/> */}
 
         <section id="gallery" className="section container mx-auto px-4">
           <div class="section__content text-center" data-content>
@@ -102,9 +105,6 @@ function App() {
         </section>
       </main>
     </div>
-
-    // <main className="container-lg px-4 max-auto">
-    // </main>
   )
 }
 

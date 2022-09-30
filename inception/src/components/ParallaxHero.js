@@ -21,14 +21,10 @@ export default function ParallaxHero() {
 
   return (
     <section className="parallax">
-      <img src="https://i.ibb.co/CwCkWFt/bg.jpg" alt="bg" id="bg" />
-      <img src="https://i.ibb.co/c8Z5Sdn/moon.png" alt="moon" id="moon" />
-      <img
-        src="https://i.ibb.co/GTRWpMF/mountain.png"
-        alt="mountain"
-        id="mountain"
-      />
-      <img src="https://i.ibb.co/0ZTFXbj/road.png" alt="road" id="road" />
+      <img src="/bg.jpg" alt="bg" id="bg" />
+      <img src="/moon.png" alt="moon" id="moon" />
+      <img src="/mountain.png" alt="mountain" id="mountain" />
+      <img src="/road.png" alt="road" id="road" />
       <h2 id="text">Moonquake</h2>
     </section>
   )
