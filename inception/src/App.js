@@ -7,6 +7,7 @@ import { useEffect } from 'react'
 import Hero from './components/Hero'
 import Explore from './explore/Explore'
 import { Navigation } from './components/Navigation'
+import Teammember from './components/Teammember'
 
 function App() {
   // useEffect(() => {
@@ -87,6 +88,16 @@ function App() {
             <div>
               <Explore />
             </div>
+          </div>
+        </section>
+        <section id="about" class="section container mx-auto px-4">
+          <div class="section__content" data-content>
+            
+          </div>
+        </section>
+        <section id="teammember" class="section container mx-auto px-4">
+          <div class="section__content" data-content>
+            <Teammember />
           </div>
         </section>
       </main>
