@@ -7,6 +7,7 @@ import { useEffect } from 'react'
 import Hero from './components/Hero'
 import Explore from './explore/Explore'
 import { Navigation } from './components/Navigation'
+import Teammember from './components/Teammember'
 
 function App() {
   // useEffect(() => {
@@ -49,9 +50,9 @@ function App() {
       <Navigation />
       <main
         className="space-y-10"
-        style={{
-          background: 'url("background.jpg")',
-        }}
+        // style={{
+        //   background: 'url("background.jpg")',
+        // }}
       >
         <Hero />
 
@@ -64,6 +65,16 @@ function App() {
         <section id="threedview" class="section container mx-auto px-4">
           <div class="section__content" data-content>
             <Explore />
+          </div>
+        </section>
+        <section id="about" class="section container mx-auto px-4">
+          <div class="section__content" data-content>
+            
+          </div>
+        </section>
+        <section id="teammember" class="section container mx-auto px-4">
+          <div class="section__content" data-content>
+            <Teammember />
           </div>
         </section>
       </main>
