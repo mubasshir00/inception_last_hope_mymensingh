@@ -126,6 +126,8 @@ const Swiperimage = () => {
         slidesPerView={3}
         onSlideChange={() => console.log('slide change')}
         onSwiper={swiper => console.log(swiper)}
+        pagination
+        navigation
       >
         {images.map(i => {
           // if (i.year === year) {

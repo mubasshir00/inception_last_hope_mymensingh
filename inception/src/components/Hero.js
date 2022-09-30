@@ -6,11 +6,13 @@ export default function Hero() {
         <div
           className="absolute overlay inset-0"
           style={{
-            background: 'rgba(0,0,0,0.1)',
+            background: 'rgba(0,0,0,0.3)',
           }}
         ></div>
 
-        {/* <h1 className="absolute text-white">Explore Moonquake</h1> */}
+        <h1 className="absolute top-[10px] text-center text-white text-[6rem] font-bold w-full flex items-center justify-center">
+          Explore Moonquake
+        </h1>
       </div>
     </section>
   )

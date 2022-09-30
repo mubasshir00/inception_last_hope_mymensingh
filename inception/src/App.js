@@ -44,17 +44,21 @@ function App() {
   // }, [])
 
   return (
-    <main>
+    <main
+      className="space-y-10"
+      style={{
+        background: 'url("background.jpg")',
+      }}
+    >
       <Hero />
 
-      <section className="section">
-        <div className="section__content" data-content>
-          <h2>Content inside</h2>
-          <p>blah blah blah</p>
+      <section className="section container mx-auto px-4">
+        <div class="section__content" data-content>
+          <Swiperimage />
         </div>
       </section>
 
-      <section class="section">
+      <section class="section container mx-auto px-4">
         <div class="section__content" data-content>
           <Explore />
         </div>
@@ -62,7 +66,6 @@ function App() {
     </main>
 
     // <main className="container-lg px-4 max-auto">
-    //   <Swiperimage />
     // </main>
   )
 }
