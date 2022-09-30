@@ -8,6 +8,7 @@ import Hero from './components/Hero'
 import Explore from './explore/Explore'
 import { Navigation } from './components/Navigation'
 import Teammember from './components/Teammember'
+import ParallaxHero from './components/ParallaxHero'
 import About from './components/About'
 import Herocontentmoon from './components/Herocontentmoon'
 
@@ -56,7 +57,8 @@ function App() {
         //   background: 'url("background.jpg")',
         // }}
       >
-        <Hero />
+        {/* <Hero /> */}
+        <ParallaxHero />
         {/* <Herocontentmoon/> */}
 
         <section id="gallery" className="section container mx-auto px-4">
@@ -105,8 +107,6 @@ function App() {
         </section>
       </main>
     </div>
-
-    
   )
 }
 
