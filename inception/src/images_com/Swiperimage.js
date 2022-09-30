@@ -122,21 +122,30 @@ const Swiperimage = () => {
   return (
     <div>
       <Swiper
-        spaceBetween={10}
+        spaceBetween={20}
         slidesPerView={3}
         onSlideChange={() => console.log('slide change')}
         onSwiper={swiper => console.log(swiper)}
         pagination
         navigation
+        autoHeight
+        autoplay
       >
         {images.map(i => {
           // if (i.year === year) {
           // }
           return (
             <SwiperSlide>
-              <div className="flex flex-col gap-2 items-center justify-center bg-gray-200 rounded-b-xl">
-                <img src={`${i.img}`} className="" />
-                <h1 className="pb-2">{i.year}</h1>
+              <div className="flex flex-col gap-2 items-center justify-center bg-gray-300 rounded-b-xl drop-shadow-md">
+                <img src={`${i.img}`} height={300} />
+                <h1
+                  className="p-8 text-black text-[2rem] font-bold"
+                  style={{
+                    fontFamily: 'Raleway',
+                  }}
+                >
+                  {i.year}
+                </h1>
               </div>
             </SwiperSlide>
           )
