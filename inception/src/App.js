@@ -48,7 +48,7 @@ function App() {
     <div>
       <Navigation />
       <main
-        className="space-y-10 bg-gray-100"
+        className="space-y-[50px] bg-gray-100 pb-12"
         // style={{
         //   background: 'url("background.jpg")',
         // }}
@@ -56,14 +56,37 @@ function App() {
         <Hero />
 
         <section id="gallery" className="section container mx-auto px-4">
-          <div class="section__content" data-content>
+          <div class="section__content text-center" data-content>
+            <h1
+              className="text-[5rem] font-bold text-black mb-12"
+              style={{
+                fontFamily: 'Raleway',
+              }}
+            >
+              Moonquake Locations
+            </h1>
+
             <Swiperimage />
           </div>
         </section>
 
         <section id="threedview" class="section container mx-auto px-4">
-          <div class="section__content" data-content>
-            <Explore />
+          <div
+            class="section__content flex flex-col items-center justify-center gap-[50px]"
+            data-content
+          >
+            <h1
+              className="text-[5rem] font-bold text-black"
+              style={{
+                fontFamily: 'Raleway',
+              }}
+            >
+              Visualize in 3D
+            </h1>
+
+            <div>
+              <Explore />
+            </div>
           </div>
         </section>
       </main>
