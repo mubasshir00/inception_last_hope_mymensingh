@@ -8,61 +8,64 @@ import Hero from './components/Hero'
 import Explore from './explore/Explore'
 
 function App() {
-  useEffect(() => {
-    const sections = [...document.querySelectorAll('section')]
+  // useEffect(() => {
+  //   const sections = [...document.querySelectorAll('section')]
 
-    let options = {
-      rootMargin: '0px',
-      threshold: 0.75,
-    }
+  //   let options = {
+  //     rootMargin: '0px',
+  //     threshold: 0.75,
+  //   }
 
-    const callback = (entries, observer) => {
-      entries.forEach(entry => {
-        const { target } = entry
+  //   const callback = (entries, observer) => {
+  //     entries.forEach(entry => {
+  //       const { target } = entry
 
-        if (entry.intersectionRatio >= 0.75) {
-          target.classList.add('is-visible')
-        } else {
-          target.classList.remove('is-visible')
-        }
-      })
-    }
+  //       if (entry.intersectionRatio >= 0.75) {
+  //         target.classList.add('is-visible')
+  //       } else {
+  //         target.classList.remove('is-visible')
+  //       }
+  //     })
+  //   }
 
-    const observer = new IntersectionObserver(callback, options)
+  //   const observer = new IntersectionObserver(callback, options)
 
-    sections.forEach((section, index) => {
-      const sectionChildren = [
-        ...section.querySelector('[data-content]').children,
-      ]
+  //   sections.forEach((section, index) => {
+  //     const sectionChildren = [
+  //       ...section.querySelector('[data-content]').children,
+  //     ]
 
-      sectionChildren.forEach((el, index) => {
-        el.style.setProperty('--delay', `${index * 250}ms`)
-      })
+  //     sectionChildren.forEach((el, index) => {
+  //       el.style.setProperty('--delay', `${index * 250}ms`)
+  //     })
 
-      observer.observe(section)
-    })
-  }, [])
+  //     observer.observe(section)
+  //   })
+  // }, [])
 
   return (
-    <main>
+    <main
+      className="space-y-10"
+      style={{
+        background: 'url("background.jpg")',
+      }}
+    >
       <Hero />
 
-      <section class="section">
+      <section className="section container mx-auto px-4">
         <div class="section__content" data-content>
-          <h2>Content inside</h2>
-          <p>blah blah blah</p>
+          <Swiperimage />
         </div>
       </section>
 
-      <section class="section">
+      <section class="section container mx-auto px-4">
         <div class="section__content" data-content>
-          <Explore/>
+          <Explore />
         </div>
       </section>
     </main>
 
     // <main className="container-lg px-4 max-auto">
-    //   <Swiperimage />
     // </main>
   )
 }
