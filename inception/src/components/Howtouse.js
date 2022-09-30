@@ -2,8 +2,8 @@ import React from 'react';
 import './Howtouse.css';
 const Howtouse = () => {
   return (
-    <div className='howtocontainer'>
-      <div className='howtowrapper'>
+    <div className="howtocontainer">
+      <div className="howtowrapper">
         <h1>Get a powerful computer.</h1>
         <img src="/moonquake/pc.jpeg" />
         <p>
@@ -37,6 +37,15 @@ const Howtouse = () => {
         <h1>Plug in related cable to run all components</h1>
         <img src="/moonquake/vrcable.png" />
         <p>After plug in pair the controllers with the link box</p>
+      </div>
+      <div>
+        <h1>Setting Up the Room</h1>
+        <img src="/moonquake/vrroom.png" />
+        <p>
+          Choose to set up a room-scale play area to enjoy moving around and
+          fully engage with the VR experience. From your computer, open the
+          SteamVR app. Click , and then select Room Setup > Room-scale
+        </p>
       </div>
     </div>
   );
