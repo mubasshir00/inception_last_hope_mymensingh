@@ -1,167 +1,158 @@
-
-
-.teammber header {
-    height: 20%;
-    display: flex;
-    align-items: center;
-    column-gap: 50px;
+.team-container {
+    max-width: 1320px;
+    padding: 0 2rem;
+    margin: 0 auto;
+    height: 100%;
 }
 
-.teammber header .title,
-.teammber header .content {
-    flex: 1;
-}
-
-.teammber header .title h3 {
-    font-size: 36px;
-}
-
-.teammber header .content h5 {
-    font-size: 16px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-
-.teammber header .content p {
-    font-size: 14px;
-}
-
-.teammber main {
+.grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 50px;
-    row-gap: 70px;
-    padding: 50px 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3%;
+    margin: 5% 0;
 }
 
-.teammber main .profile {
-    display: flex;
-    justify-content: center;
-    position: relative;
+.card {
+    overflow: hidden;
+    padding: 20px;
+    background: linear-gradient(171.38deg, #F9FBFC 3.36%, #E2EAF5 95.69%);
+    box-shadow: 0px 0px 20px rgba(227, 235, 246, 0.3);
+    border-radius: 30px;
+    text-align: center;
 }
 
-.teammber main .profile figure {
-    width: 85%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
 
-.teammber main .profile figure img {
-    width: 80%;
-}
-
-.teammber main .profile figure figcaption {
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 12px;
-    text-transform: capitalize;
-    cursor: pointer;
-}
-
-.teammber main .profile figure::after {
-    content: attr(data-value);
+.card_img img {
     width: 100%;
-    transform-origin: 0 0;
-    transform: rotate(90deg);
+    height: 350px;
+    border-radius: 20px;
+}
+
+.card_body {
+    padding: 26px 10px 36px 10px;
+}
+
+.card_title {
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #25262C;
+    font-size: 32px;
+    padding-bottom: 15px;
+}
+
+.designation {
+    font-weight: 700;
+    font-size: 22px;
+    color: #959EAF;
+}
+
+.call_btn {
+    margin: 140px 0 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 99;
+}
+
+
+
+.btn_icon i {
+    position: relative;
+    font-size: 22px;
+    color: #1F83FE;
+    transition: all .3s ease-in-out;
+}
+
+.btn_icon i:after {
+    content: '';
     position: absolute;
-    text-transform: uppercase;
-    font-size: 12px;
-    right: -92%;
+    height: 55px;
+    width: 55px;
+    background-color: white;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    left: -17px;
+    top: -18px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
 }
 
-.teammber main .profile:nth-child(2) {
-    margin-top: 70px;
+.circle {
+    position: absolute;
+    background: radial-gradient(45.14% 45.14% at 50% 50%, #BFDAFF 0%, #BDD9FD 26.59%, #D4E5FF 46.99%, #CCE0FF 71.36%, #A7CCFF 100%);
+    box-shadow: 0px 4px 107px rgba(179, 211, 255, 0.5);
+    border-radius: 50%;
+    left: -46px;
+    top: -46px;
+    height: 110px;
+    width: 110px;
+    display: block;
+    z-index: -2;
+    transition: all .3s ease-in-out;
 }
 
-.teammber main .profile:nth-child(4) {
-    margin-top: -70px;
+.btn_icon:hover i {
+    color: #0050B1;
 }
 
-.teammber main .profile:nth-child(6) {
-    margin-top: -70px;
+
+.btn_icon:hover .circle {
+    box-shadow: 0px 4px 97px rgba(44, 134, 255, 0.8);
 }
 
-.teammber footer {
-    height: 5%;
-    color: #bdbdbd;
-    display: grid;
-    place-items: center;
-    font-size: 12px;
-}
-
-.teammber footer a {
+.link {
+    position: fixed;
+    background-color: #D12322;
+    padding: 23px 40px;
+    right: -110px;
+    border-radius: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(-90deg);
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFF;
     text-decoration: none;
-    color: inherit;
+    text-transform: capitalize;
+    transition: all .1s ease-in-out;
 }
 
-@media screen and (max-width: 1440px) {
-    .teammber {
-        width: 70%;
-    }
-
-    .teammber main {
-        column-gap: 50px;
-    }
+.link i {
+    padding-left: 7px;
 }
 
-@media screen and (max-width: 1024px) {
-    .teammber {
-        width: 80%;
-    }
-
-    .teammber main {
-        column-gap: 35px;
-    }
+.link:hover {
+    text-decoration: underline;
+    background-color: black;
 }
 
-@media screen and (max-width: 768px) {
-    .teammber {
-        width: 90%;
-    }
 
-    .teammber main {
-        column-gap: 25px;
+@media only screen and (max-width: 1024px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2%;
     }
 }
 
-@media screen and (max-width: 600px) {
-    .teammber {
-        width: 90%;
-        height: auto;
-        margin: 50px auto 10px;
+
+@media only screen and (max-width: 425px) {
+    .container {
+        padding: 0 1rem;
     }
 
-    .teammber header {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        row-gap: 20px;
+    .card {
+        padding: 12px;
     }
 
-    .teammber header .title {
-        align-self: flex-start;
+    .card_title {
+        font-size: 26px;
     }
 
-    .teammber header .title h3 {
-        font-size: 30px;
+    .designation {
+        font-size: 18px;
     }
 
-    .teammber main {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 0px;
-        row-gap: 0px;
-    }
-
-    .teammber main .profile:nth-child(2),
-    .teammber main .profile:nth-child(4),
-    .teammber main .profile:nth-child(6) {
-        margin-top: 50px;
-    }
-
-    .teammber main .profile:nth-child(3),
-    .teammber main .profile:nth-child(5) {
-        margin-top: 0px;
+    .call_btn {
+        margin: 100px 0 25px;
     }
 }

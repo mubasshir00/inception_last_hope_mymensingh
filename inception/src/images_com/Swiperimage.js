@@ -1,6 +1,6 @@
 import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { EffectCoverflow, Pagination } from 'swiper'
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
+import { Autoplay, EffectCoverflow, Pagination } from 'swiper'
 
 import 'swiper/css'
 import { useState } from 'react'
@@ -124,12 +124,20 @@ const images = [
 ]
 
 const Swiperimage = () => {
-    const swiper = useSwiper();
+  const swiper = useSwiper();
 
   return (
     <div>
       <Swiper
-        effect={'coverflow'}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+          waitForTransition:true,
+          transition:500
+        }}
+        centeredSlidesBounds
+        loopFillGroupWithBlank={false}
+        effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={3}
@@ -141,7 +149,7 @@ const Swiperimage = () => {
           slideShadows: true,
         }}
         pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[EffectCoverflow, Pagination, Autoplay]}
         className="mySwiper"
         autoHeight
       >
@@ -155,18 +163,18 @@ const Swiperimage = () => {
                 <h1
                   className="p-8 text-black text-[2rem] font-bold"
                   style={{
-                    fontFamily: 'Raleway',
+                    fontFamily: "Raleway",
                   }}
                 >
                   {i.year}
                 </h1>
               </div>
             </SwiperSlide>
-          )
+          );
         })}
       </Swiper>
     </div>
-  )
+  );
 }
 
 export default Swiperimage

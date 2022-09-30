@@ -2,57 +2,101 @@ import React from 'react'
 import './Teammember.css'
 const Teammember = () => {
   return (
-    <div className="teammber">
-      <header>
-        <div className="title">
-          <h3>Inception Last Hope</h3>
-        </div>
-        <div className="content">
-          <h5>who we are</h5>
-          <p>
-            We are team of creatively diverse. driven. innovative individuals
-            working in various locations from the world.
-          </p>
-        </div>
-      </header>
-      <main>
-        <div className="profile">
-          <figure data-value="Team Lead">
+    <div className="team-container">
+      <div className="grid">
+        <div className="card">
+          <div className="card_img">
             <img src="/moonquake/kazi.jpg" alt />
-            <figcaption>Kazi Hasib</figcaption>
-          </figure>
+          </div>
+          <div className="card_body">
+            <h2 className="card_title">kazi Hasib</h2>
+            <h6 className="designation">Team Lead</h6>
+            {/* <div className="call_btn">
+              <a href="#" className="btn_icon">
+                <i className="fas fa-phone-alt" />
+                <span className="circle" />
+              </a>
+            </div> */}
+          </div>
         </div>
-        <div className="profile">
-          <figure data-value="VR Developer">
+        <div className="card">
+          <div className="card_img">
             <img src="/moonquake/syed.png" alt />
-            <figcaption>Syed Rubayyat Akbar</figcaption>
-          </figure>
+          </div>
+          <div className="card_body">
+            <h2 className="card_title">Syed Rubayyat Akbar</h2>
+            <h6 className="designation">VR Developer</h6>
+            {/* <div className="call_btn">
+              <a href="#" className="btn_icon">
+                <i className="fas fa-phone-alt" />
+                <span className="circle" />
+              </a>
+            </div> */}
+          </div>
         </div>
-        <div className="profile">
-          <figure data-value="Business Analyst">
+        <div className="card">
+          <div className="card_img">
             <img src="/moonquake/turjo.jpg" alt />
-            <figcaption>Manoshi Das Turjo</figcaption>
-          </figure>
+          </div>
+          <div className="card_body">
+            <h2 className="card_title">Manoshi Das Turjo</h2>
+            <h6 className="designation">Business Analyst</h6>
+            {/* <div className="call_btn">
+              <a href="#" className="btn_icon">
+                <i className="fas fa-phone-alt" />
+                <span className="circle" />
+              </a>
+            </div> */}
+          </div>
         </div>
-        <div className="profile">
-          <figure data-value="Front End Developer">
-            <img src="/moonquake/wasiul.jpg" alt />
-            <figcaption>Wasiul Islam</figcaption>
-          </figure>
-        </div>
-        <div className="profile">
-          <figure data-value="Back End Developer">
+      </div>
+      <div className="grid">
+        <div className="card">
+          <div className="card_img">
             <img src="/moonquake/Mubasshir.jpg" alt />
-            <figcaption>Mubasshir Ahmed</figcaption>
-          </figure>
+          </div>
+          <div className="card_body">
+            <h2 className="card_title">Mubasshir Ahmed</h2>
+            <h6 className="designation">Back End Developer</h6>
+            {/* <div className="call_btn">
+              <a href="#" className="btn_icon">
+                <i className="fas fa-phone-alt" />
+                <span className="circle" />
+              </a>
+            </div> */}
+          </div>
         </div>
-        <div className="profile">
-          <figure data-value="UI/UX Designer">
+        <div className="card">
+          <div className="card_img">
+            <img src="/moonquake/wasiul.jpg" alt />
+          </div>
+          <div className="card_body">
+            <h2 className="card_title">Wasiul Islam</h2>
+            <h6 className="designation">VR Developer</h6>
+            {/* <div className="call_btn">
+              <a href="#" className="btn_icon">
+                <i className="fas fa-phone-alt" />
+                <span className="circle" />
+              </a>
+            </div> */}
+          </div>
+        </div>
+        <div className="card">
+          <div className="card_img">
             <img src="/moonquake/shanto_n.png" alt />
-            <figcaption>S.M. Sajid Hasan Shanta</figcaption>
-          </figure>
+          </div>
+          <div className="card_body">
+            <h2 className="card_title">Sajid Hasan Shanta</h2>
+            <h6 className="designation">UI/UX Designer</h6>
+            {/* <div className="call_btn">
+              <a href="#" className="btn_icon">
+                <i className="fas fa-phone-alt" />
+                <span className="circle" />
+              </a>
+            </div> */}
+          </div>
         </div>
-      </main>
+      </div>
     </div>
   );
 }
