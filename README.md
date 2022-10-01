@@ -41,22 +41,27 @@ Whom has no VR Head set , she or he can use our Web app as well!
 
 
 ## TECH STACK:
-Web Application: Javascript, HTML, CSS , ReactJS
-VR Application: Unity , WebXR , C# , NASA 3D model
-Hardware : HTC vive , Controller , VR Head set.
-SPACE AGENCY DATA
-NEW IDENTIFICATION OF DEEP MOONQUAKES IN THE APOLLO LUNAR SEISMIC DATA - YOSIO NAKAMURA
-[ HTTPS://WWW.SCIENCEDIRECT.COM/SCIENCE/ARTICLE/ABS/PII/S0031920103002103 ] 
+Web Application: Javascript, HTML, CSS , ReactJS<br>
+VR Application: Unity , WebXR , C# , NASA 3D model<br>
+Hardware : HTC vive , Controller , VR Head set.<br>
+SPACE AGENCY DATA<br>
+NEW IDENTIFICATION OF DEEP MOONQUAKES IN THE APOLLO LUNAR SEISMIC DATA - YOSIO NAKAMURA<br>
+[ HTTPS://WWW.SCIENCEDIRECT.COM/SCIENCE/ARTICLE/ABS/PII/S0031920103002103 ]
+
+![image](https://user-images.githubusercontent.com/46110807/193401043-bdbd970a-5e2c-4f4a-9e52-72d6b268e4da.png)
 
 **APOLLO MISSION INFORMATION:** TO COMPILE INFORMATION ON VARIOUS APOLLO MISSIONS TO THE MOON BY NASA. [ HTTPS://WWW.NASA.GOV/MISSION_PAGES/APOLLO/INDEX.HTML
 
 
 ## We have used multiple NASA APIs & Resources:
-CGI Moon Kit
-NASA's Planetary Data System
-Apollo Lunar Surface Experiments Package
-DARTS SEISMOLOGY at ISAS/JAXA
-Passive Seismic Observation Data
+1. CGI Moon Kit
+2. NASA's Planetary Data System
+3. Apollo Lunar Surface Experiments Package
+4. DARTS SEISMOLOGY at ISAS/JAXA
+5. Passive Seismic Observation Data
+
+![image](https://user-images.githubusercontent.com/46110807/193401064-3210a49d-1281-4af6-9efd-11e0830d3ae9.png)
+![image](https://user-images.githubusercontent.com/46110807/193401066-e685a574-6523-4353-8476-67fc4240dd7b.png)\
 
 
 ## HACKATHON JOURNEY
