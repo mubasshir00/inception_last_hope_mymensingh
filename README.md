@@ -1,18 +1,23 @@
 # VR Moonquake Game / Simulator
 
+
 ## HIGH-LEVEL PROJECT SUMMARY
 At each Apollo landing site, NASA's astronauts explored the moon and left behind some devices for research. We created a VR application that visualizes this passive seismic experiment data on the moon surface, where people can experience moonquakes from 1971 to 1976 in a virtual reality environment like real life. We retrieved and simulated the Apollo lunar seismic data. Users will experience VR moonquakes from NASA APIs, and a virtual wristwatch will display data. An interactive option to navigate between the moonquake experiences. People without VR sets can explore Moonquake with 3D models. Finally, our application impacts future generations' ability to learn &amp; research about Moon.
+
 
 ## LINK TO FINAL PROJECT
 https://github.com/mubasshir00/inception_last_hope_mymensingh
 
+
 ## LINK TO PROJECT "DEMO"
 https://youtu.be/LYPzmBPZZRc
+
 
 ## DETAILED PROJECT DESCRIPTION
 When NASA explored the Moon, NASA’s Apollo astronauts left behind several instruments to collect geophysical data near each Apollo landing site. We used those data sets to find out the Passive Seismic Experiment through the VR Moonquake Game. A virtual wristwatch shows details of the moonquake by time, location(latitude and longitude), and the magnitude of the particular moonquake. In the meantime, a visualization of the moonquake will happen, which can be experienced by the vibration and other moonquake material with the actual magnitude fetched from NASA APIs. Not only that, the user can interact with the moon element. E.g A user can pick a stone from the moon and throw it. Someone can travel to the Moon by our VR Moonquake Map. 
 
 Our application will make a long term impact towards future generations' ability to learn & research about the moon by growing interest in knowing the moon and moonquake better. 
+
 
 ## HOW IT WORKS:
 Users will interact with the system through a web application. A user with a VR headset can access the VR app. The VR app functions with Process I/O, Load Data, Simulate Physics, and Scenario Playback for developing the VR environment of the moon. We use the Unity Engine with the Scene Editor module and Interaction Model for this. And the interaction module is based on the visualization module and controller module, which makes a VR environment of the moon's surface with a moonquake, where users can explore the moonquake in a virtual reality environment like real life.
@@ -34,6 +39,7 @@ User safety for VR headset by manual
 
 Whom has no VR Head set , she or he can use our Web app as well!
 
+
 ## TECH STACK:
 Web Application: Javascript, HTML, CSS , ReactJS
 VR Application: Unity , WebXR , C# , NASA 3D model
@@ -43,6 +49,7 @@ NEW IDENTIFICATION OF DEEP MOONQUAKES IN THE APOLLO LUNAR SEISMIC DATA - YOSIO N
 [ HTTPS://WWW.SCIENCEDIRECT.COM/SCIENCE/ARTICLE/ABS/PII/S0031920103002103 ] 
 
 **APOLLO MISSION INFORMATION:** TO COMPILE INFORMATION ON VARIOUS APOLLO MISSIONS TO THE MOON BY NASA. [ HTTPS://WWW.NASA.GOV/MISSION_PAGES/APOLLO/INDEX.HTML
+
 
 ## We have used multiple NASA APIs & Resources:
 CGI Moon Kit
@@ -61,6 +68,7 @@ We learned how to tackle a challenge within 48 hrs. We divided all our task betw
 
 I want to thank BASIS for organizing this amazing hackathon in Bangladesh. Without them, we could not have attended this world wide hackathon. We hope to achieve Champions title for our beloved country , Bangladesh 
 
+
 ## REFERENCES
 https://www.lpi.usra.edu/lunar/samples/apollo/tools/index.shtml 
 https://moon.nasa.gov/resources/13/apollo-11-seismic-experiment/ 
@@ -73,8 +81,9 @@ https://www.darts.isas.jaxa.jp/planet/seismology/apollo/Tape_Format.html
 pds-geosciences.wustl.edu - /lunar/urn-nasa-pds-apollo_seismic_event_catalog/document/
 PDS Geosciences Node Data and Services: Apollo Seismic Event Catalog (wustl.edu)
 
-## TAGS
-#moon, #moonquake, #map, #game, #make moon , #quake, #map, #seismic, #data, #Artemis
+
+**TAGS** #moon, #moonquake, #map, #game, #make moon , #quake, #map, #seismic, #data, #Artemis
+
 
 ![image](https://user-images.githubusercontent.com/46110807/193400555-45352733-dcc2-44da-b088-4f7c5f8a9af5.png)
 ![image](https://user-images.githubusercontent.com/46110807/193400573-d1178d0d-3847-4a7b-b1f9-67de616f121f.png)
