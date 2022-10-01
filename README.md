@@ -30,7 +30,7 @@ Visualize a 3D model of a moonquake without a VR set
 Learn about moonquakes through the informative slider
 User safety for VR headset by manual
 
-**Live Web Link:** Inception Last Hope (inception-last-hope.vercel.app)
+**Live Web Link:** Inception Last Hope [This is an external link to https://inception-last-hope.vercel.app](inception-last-hope.vercel.app)
 
 Whom has no VR Head set , she or he can use our Web app as well!
 
