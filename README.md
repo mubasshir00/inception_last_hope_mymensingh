@@ -8,7 +8,7 @@ Tech stack
 
 * Web Apllication:  Javascript, HTML, CSS , ReactJS
 * VR Application: Unity , WebXR , C# , NASA 3D model
-* Hardware : HTC vive , Controller , VR Head set , Sensor  , 
+* Hardware : HTC vive , Controller , VR Head set 
 
 Features:
 
